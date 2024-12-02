@@ -1,0 +1,92 @@
+
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: arial;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.move-icon {
+    height: 50px;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score {
+    margin-top: 60px;
+}
+
+.reset-score-button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Responsive additions */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px; /* Adjust font size for readability */
+        text-align: center; /* Center-align title */
+    }
+    .move-button {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto; /* Center buttons horizontally */
+        display: block; /* Stack buttons vertically */
+    }
+    .result, .score {
+        font-size: 20px;
+        text-align: center;
+    }
+    .reset-score-button {
+        font-size: 14px;
+        margin: 20px auto;
+        display: block; /* Center reset button */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px; /* Smaller font size for mobile screens */
+        text-align: center;
+    }
+    .move-icon {
+        height: 40px; /* Scale down icons */
+    }
+    .move-button {
+        width: 80px;
+        height: 80px;
+    }
+    .result {
+        font-size: 18px; /* Compact result font */
+    }
+    .score {
+        margin-top: 30px;
+        font-size: 16px; /* Adjust score font size */
+        text-align: center;
+    }
+    .reset-score-button {
+        padding: 6px 10px; /* Adjust padding for smaller screens */
+        font-size: 12px;
+    }
+}
